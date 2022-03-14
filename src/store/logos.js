@@ -10,39 +10,39 @@ import Yarn from "../assets/Yarn.png";
 
 export const logoArray = [
   {
-    name: "Adobe Suite",
-    image: { Adobe },
-  },
-  {
-    name: "Css",
-    image: { Css },
-  },
-  {
-    name: "Figma",
-    image: { Figma },
-  },
-  {
-    name: "Git",
-    image: { Git },
-  },
-  {
-    name: "JS",
-    image: { JS },
-  },
-  {
-    name: "Node",
-    image: { Node },
-  },
-  {
     name: "React",
-    image: { React },
+    image: React,
+  },
+  {
+    name: "Javascript",
+    image: JS,
   },
   {
     name: "Sass",
-    image: { Sass },
+    image: Sass,
+  },
+  {
+    name: "Css",
+    image: Css,
+  },
+  {
+    name: "Node",
+    image: Node,
+  },
+  {
+    name: "Git",
+    image: Git,
+  },
+  {
+    name: "Figma",
+    image: Figma,
   },
   {
     name: "Yarn",
-    image: { Yarn },
+    image: Yarn,
+  },
+  {
+    name: "Adobe Suite",
+    image: Adobe,
   },
 ];

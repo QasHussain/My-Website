@@ -1,0 +1,141 @@
+.projectsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  #{&}__title {
+    margin-bottom: -1.45rem;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px #000000;
+    z-index: 9;
+  }
+
+  #{&}__border {
+    position: relative;
+    left: 2.2rem;
+    padding-left: 10.5rem;
+    border-top: 20px solid #ff9c9c;
+  }
+}
+
+.pContentContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem;
+}
+
+.pContentContainer__imgBox {
+  width: 60%;
+  height: 80%;
+  background-image: linear-gradient(
+    to bottom,
+    #2a415cc7,
+    rgba(35, 46, 60, 0.92)
+  );
+  border-radius: 2%;
+  margin-left: 100px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  #{&}__img {
+    display: block;
+    object-fit: contain;
+    width: 80%;
+    background: linear-gradient(to top, #2a415c, #ff9c9c) border-box;
+    border: 2px solid transparent;
+  }
+}
+
+.pContentContainer__textBox {
+  position: relative;
+  right: 6%;
+
+  #{&}__title {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 0.1rem;
+  }
+
+  #{&}__txt {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: left;
+    width: 550px;
+  }
+}
+
+.pContentContainer__textBoxButtons {
+  justify-content: left;
+  width: 50%;
+  flex-direction: column;
+
+  #{&}__btn {
+    display: block;
+    width: 85%;
+    margin-bottom: 1rem;
+    color: #ff9c9c;
+    font-weight: light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-shadow: 1px 1px #000000;
+    box-shadow: 0px 5px 15px black;
+    margin-top: 1%;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: solid 4px #ff9c9c;
+    border-radius: 0.6rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.1rem;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+
+    &:hover {
+      transition-duration: 0.1s;
+      transform: scale(1.02);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 4em;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.5s;
+      box-shadow: 0 0 10px 40px #ff9c9c;
+    }
+
+    &:active::after {
+      box-shadow: 0 0 0 0 rgb(0, 0, 0);
+      position: absolute;
+      border-radius: 0.6rem;
+      left: 0;
+      top: 0;
+      opacity: 1;
+      transition: 0s;
+    }
+
+    &:active {
+      top: 1px;
+    }
+  }
+}

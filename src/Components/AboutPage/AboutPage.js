@@ -17,12 +17,26 @@ function AboutPage() {
             alt="ProfilePic"
             className="contentContainerQas__img"
           />
-          <h2 className="contentContainerQas__name">Qasim Hussain</h2>
-          <p className="contentContainerQas__p">Hooby Gooby</p>
+          <h2 className="contentContainerQas__name">QASIM HUSSAIN</h2>
+          <p className="contentContainerQas__p">
+            Junior coder with background in design and illustration. A self
+            taught developer, I’ve been learning and building projects for the
+            last year and have picked up a real passion for front end
+            development and design. The combination of logic, problem solving
+            and creativity consistently motivates me to keep creating and
+            learning. Outside of coding, I’m an artist and illustrator, gamer,
+            father to a 1 year old daughter and a bit of a movie nerd!
+          </p>
         </div>
+
         <div className="contentContainerSkills">
           <div className="contentContainerSkills__grid">
-            {logoArray[0].name}
+            {logoArray.map((logo) => (
+              <div className="border">
+                <img className="img" src={logo.image} />
+                <p className="txt">{logo.name.toLocaleUpperCase()}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
