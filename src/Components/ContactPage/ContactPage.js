@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import ReCAPTCHA from "react-google-recaptcha";
 import { validate } from "../../store/validateForm";
+import ContactPageForm from "./ContactPageForm";
 
 function ContactPage() {
   const formId = "kF9VvST0";
@@ -33,9 +33,7 @@ function ContactPage() {
   };
 
   useEffect(() => {
-    console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formState);
     }
   }, [formErrors]);
 
@@ -74,57 +72,17 @@ function ContactPage() {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
-
-      <form onSubmit={submitForm}>
-        <p>{formErrors.name}</p>
-        <div>
-          <input
-            onChange={updateFormControl}
-            type="text"
-            id="name"
-            value={formState.name}
-            placeholder="Name"
-          />
-        </div>
-
-        <div>
-          <p>{formErrors.email}</p>
-
-          <input
-            onChange={updateFormControl}
-            type="text"
-            id="email"
-            value={formState.email}
-            placeholder="Email"
-          />
-        </div>
-
-        <div>
-          <p>{formErrors.message}</p>
-
-          <textarea
-            onChange={updateFormControl}
-            type="text"
-            id="message"
-            value={formState.message}
-            placeholder="Message"
-          />
-        </div>
-
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey={recaptchaKey}
-          onChange={updateRecaptchaToken}
-        />
-
-        <button disabled={submitting}>
-          {submitting ? "Submitting..." : "Submit"}
-        </button>
-      </form>
-      {message && <div>{message.text}</div>}
-    </div>
+    <ContactPageForm
+      submitForm={submitForm}
+      formErrors={formErrors}
+      updateFormControl={updateFormControl}
+      formState={formState}
+      recaptchaRef={recaptchaRef}
+      recaptchaKey={recaptchaKey}
+      updateRecaptchaToken={updateRecaptchaToken}
+      submitting={submitting}
+      message={message}
+    />
   );
 }
 

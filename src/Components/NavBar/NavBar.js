@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.scss";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
-function NavBar() {
+function NavBar({ scrollHome, scrollAbout, scrollProjects, scrollContact }) {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 650) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
-    <div className="navBarWrapper">
+    <div className={`navBarWrapper ${show && "navBarWrapper__show"}`}>
       <div className="navBar">
         <ul className="navBar__icons">
           <li className="navBar__icons__items">
@@ -34,16 +47,24 @@ function NavBar() {
         </ul>
         <ul className="navBar__menu">
           <li className="navBar__menu__items">
-            <span className="text">Home</span>
+            <span onClick={scrollHome} className="text">
+              Home
+            </span>
           </li>
           <li className="navBar__menu__items">
-            <span className="text">About</span>
+            <span onClick={scrollAbout} className="text">
+              About
+            </span>
           </li>
           <li className="navBar__menu__items">
-            <span className="text">Projects</span>
+            <span onClick={scrollProjects} className="text">
+              Projects
+            </span>
           </li>
           <li className="navBar__menu__items">
-            <span className="text">Contact</span>
+            <span onClick={scrollContact} className="text">
+              Contact
+            </span>
           </li>
         </ul>
       </div>
