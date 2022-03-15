@@ -3,6 +3,7 @@ import "./App.scss";
 import AboutPage from "./Components/AboutPage/AboutPage";
 import Background from "./Components/Background/Background";
 import ContactPage from "./Components/ContactPage/ContactPage";
+import DesignProcessPage from "./Components/DesignProcessPage/DesignProcessPage";
 import Footer from "./Components/Footer/Footer";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import NavBar from "./Components/NavBar/NavBar";
@@ -37,6 +38,8 @@ function App() {
   return (
     <div className="App">
       <Background>
+        <DesignProcessPage />
+
         <NavBar
           scrollContact={handleScrollToContact}
           scrollAbout={handleScrollToAbout}
