@@ -18,14 +18,12 @@
 
 .designContainer__imgBox {
   width: 40%;
-
   background-image: linear-gradient(
     to bottom,
     #2a415cc7,
     rgba(35, 46, 60, 0.92)
   );
   border-radius: 2%;
-
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -54,5 +52,68 @@
     font-weight: lighter;
     text-align: left;
     width: 700px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .designContainer__textBox {
+    #{&}__title {
+      font-size: 2rem;
+    }
+
+    #{&}__txt {
+      font-size: 1.1rem;
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .designContainer__textBox {
+    #{&}__title {
+      font-size: 1.8rem;
+    }
+
+    #{&}__txt {
+      font-size: 1rem;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .designContainer {
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 0;
+  }
+
+  .designContainer__imgBox {
+    width: 80%;
+
+    #{&}__img {
+      width: 80%;
+    }
+  }
+
+  .designContainer__textBox {
+    right: 0;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    #{&}__title {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    #{&}__txt {
+      text-align: center;
+      font-size: 1rem;
+      width: 90%;
+    }
   }
 }

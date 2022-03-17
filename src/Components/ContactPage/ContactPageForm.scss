@@ -61,6 +61,7 @@
     font-weight: lighter;
     width: 40%;
     font-size: 1.5rem;
+    color: white;
   }
 
   #{&}__email {
@@ -70,6 +71,7 @@
     font-weight: lighter;
     width: 40%;
     font-size: 1.5rem;
+    color: white;
   }
 
   #{&}__message {
@@ -80,6 +82,7 @@
     width: 40%;
     font-size: 1.5rem;
     padding-bottom: 5rem;
+    color: white;
   }
 }
 
@@ -149,4 +152,90 @@
   background-color: rgba(255, 255, 255, 0.26);
   color: #ff9c9c;
   font-weight: lighter;
+}
+
+@media (max-width: 1023px) {
+  .formTitleContainer {
+    #{&}__title {
+      font-size: 3.2rem;
+    }
+
+    #{&}__border {
+      left: 1.8rem;
+      padding-left: 9.5rem;
+    }
+  }
+
+  .formTextContainer {
+    width: 40%;
+    #{&}__text {
+      font-size: 1.2rem;
+      margin-bottom: -0.1rem;
+    }
+  }
+
+  .formContainerBox {
+    #{&}__name {
+      width: 50%;
+    }
+
+    #{&}__email {
+      width: 50%;
+    }
+
+    #{&}__message {
+      width: 50%;
+    }
+  }
+
+  .btn {
+    border: solid 5px #ff9c9c;
+    width: 30%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .formTextContainer {
+    width: 80%;
+    #{&}__text {
+      font-size: 1.2rem;
+    }
+  }
+
+  .formContainerBox {
+    #{&}__name {
+      width: 80%;
+    }
+
+    #{&}__email {
+      width: 80%;
+    }
+
+    #{&}__message {
+      width: 80%;
+    }
+  }
+
+  .btn {
+    border: solid 5px #ff9c9c;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .btn {
+    border: solid 4px #ff9c9c;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .btn {
+    border: solid 3px #ff9c9c;
+    width: 80%;
+    font-size: 1.5rem;
+  }
 }

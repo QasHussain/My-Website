@@ -46,10 +46,10 @@ function DesignProcessPage({ appClick, gitClick, figmaClick }) {
           FIGMA FILE
         </button>
         <button onClick={appClick} className="buttonContainer__btn">
-          LIVE APP
+          LIVE APPLICATION
         </button>
         <button onClick={gitClick} className="buttonContainer__btn">
-          GITHUB
+          PROJECT GITHUB
         </button>
       </div>
     </div>

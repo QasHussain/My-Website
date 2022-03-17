@@ -7,7 +7,7 @@ function NavBar({ scrollHome, scrollAbout, scrollProjects, scrollContact }) {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 650) {
+      if (window.scrollY > 300) {
         handleShow(true);
       } else handleShow(false);
     });
