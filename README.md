@@ -40,7 +40,7 @@ When planning this project I always knew I wanted a fully responsive design comp
 
 ![Design Process IPHONE](https://user-images.githubusercontent.com/98174866/159035597-8e3d0536-908e-4463-be83-dd32661bb8dc.jpg)
 
-With all the design work completed, i began the built. Given the single page, reactive nature of this website I knew I wanted to use the React Library. The work I did designing this website once again proved vital, as I was able to build this website with a clear vision in mind, a vision I believe was brought to life succesfully.
+With all the design work completed, I began the build. Given the single page, reactive nature of this website I knew I wanted to use the React Library. The work I did designing this website once again proved vital, as I was able to build this website with a clear vision in mind, a vision I believe was brought to life succesfully.
 
 ## Technologies Used:
 
