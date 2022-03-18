@@ -11,34 +11,7 @@ function AboutPage() {
         <h1 className="titleContainer__title">About</h1>
         <div className="titleContainer__border"></div>
       </div>
-      <div className="logos">
-        <ul className="logos__icons">
-          <li className="logos__iconsItems">
-            <span>
-              <a className="icons" href="https://github.com/QasHussain">
-                <AiFillGithub />
-              </a>
-            </span>
-          </li>
-          <li className="logos__iconsItems">
-            <span>
-              <a
-                className="icons"
-                href="https://www.linkedin.com/in/qasim-hussain-353088108/"
-              >
-                <AiFillLinkedin />
-              </a>
-            </span>
-          </li>
-          <li className="logos__iconsItems">
-            <span>
-              <a className="icons" href="mailto:Qas_24@hotmail.com">
-                <AiOutlineMail />
-              </a>
-            </span>
-          </li>
-        </ul>
-      </div>
+
       <div className="contentContainer">
         <div className="contentContainerQas">
           <img
@@ -47,6 +20,34 @@ function AboutPage() {
             className="contentContainerQas__img"
           />
           <h2 className="contentContainerQas__name">QASIM HUSSAIN</h2>
+          <div className="logos">
+            <ul className="logos__icons">
+              <li className="logos__iconsItems">
+                <span>
+                  <a className="icons" href="https://github.com/QasHussain">
+                    <AiFillGithub />
+                  </a>
+                </span>
+              </li>
+              <li className="logos__iconsItems">
+                <span>
+                  <a
+                    className="icons"
+                    href="https://www.linkedin.com/in/qasim-hussain-353088108/"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </li>
+              <li className="logos__iconsItems">
+                <span>
+                  <a className="icons" href="mailto:Qas_24@hotmail.com">
+                    <AiOutlineMail />
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
           <p className="contentContainerQas__p">
             Junior coder with background in design and illustration. A self
             taught developer, I’ve been learning and building projects for the
