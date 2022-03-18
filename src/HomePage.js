@@ -35,7 +35,7 @@ function Home() {
     window.open("https://github.com/QasHussain/Final-Fantasy-Codex-V2");
   };
   const handleDesignClick = () => {
-    window.open("http://localhost:3000/designProcess");
+    window.open("https://my-website-5f1d8.web.app/designProcess");
   };
 
   return (
