@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# My Front End Porfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### By Qasim Hussain
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+My online portfolio website. I built this website to display to act as my online CV when applying for fton end development jobs. This project was degined in Figma and built in react using javascript, node.js and sass. I set out to make a website that was sleek, lightweight, and stylish that would also be fully responsive and compatible on for all devices.
 
-### `npm start`
+## Planning and Preperation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As with my previous prject, the planning and preparation for this website involved a lot of design work in Figama. I search the internet for websites that I liked to draw inspiration from before I went into Figma and started designing my website. I knew I wanted it to a single page application that was clear and intuitive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Using Figma I designed the landing page, main content and a separate 'development process' page for my portfolio project that would highlight all the steps I took when building my Final Fnatasy Codex application:
 
-### `npm test`
+**Figma Landing Page Design:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Landing page](https://user-images.githubusercontent.com/98174866/159034620-fa636819-8e52-4b8e-af77-024402731aed.jpg)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Figma Main Content Page Design:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Main Content](https://user-images.githubusercontent.com/98174866/159034957-cdb302e2-1ef1-4264-9b02-2312e487b3e0.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Figma Project Page Design:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Design Process](https://user-images.githubusercontent.com/98174866/159035151-eb73e5a3-4a47-4865-aa67-f888610e3c0f.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Fully Responsive Design
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+When planning this project I always knew I wanted a fully responsive design compatible with all devices, so I also created mobile designs for the above pages.
 
-## Learn More
+**Figma Iphone Page Design:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![13 Pro - 1](https://user-images.githubusercontent.com/98174866/159035532-72a37bad-42f3-47a3-9f40-e0b69f25c166.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+**Figma Iphone Project Page Design:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Design Process IPHONE](https://user-images.githubusercontent.com/98174866/159035597-8e3d0536-908e-4463-be83-dd32661bb8dc.jpg)
 
-### Analyzing the Bundle Size
+With all the design work completed, I began the build. Given the single page, reactive nature of this website I knew I wanted to use the React Library. The work I did designing this website once again proved vital, as I was able to build this website with a clear vision in mind, a vision I believe was brought to life succesfully.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*React
+*Javascript
+*Figma
+*Css
+*Node.js
+*Scss
