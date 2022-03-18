@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutPage.scss";
 import { logoArray } from "../../store/logos";
 import profilePic from "../../assets/ProfilePic.jpg";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 function AboutPage() {
   return (
@@ -9,6 +10,34 @@ function AboutPage() {
       <div className="titleContainer">
         <h1 className="titleContainer__title">About</h1>
         <div className="titleContainer__border"></div>
+      </div>
+      <div className="logos">
+        <ul className="logos__icons">
+          <li className="logos__iconsItems">
+            <span>
+              <a className="icons" href="https://github.com/QasHussain">
+                <AiFillGithub />
+              </a>
+            </span>
+          </li>
+          <li className="logos__iconsItems">
+            <span>
+              <a
+                className="icons"
+                href="https://www.linkedin.com/in/qasim-hussain-353088108/"
+              >
+                <AiFillLinkedin />
+              </a>
+            </span>
+          </li>
+          <li className="logos__iconsItems">
+            <span>
+              <a className="icons" href="mailto:Qas_24@hotmail.com">
+                <AiOutlineMail />
+              </a>
+            </span>
+          </li>
+        </ul>
       </div>
       <div className="contentContainer">
         <div className="contentContainerQas">

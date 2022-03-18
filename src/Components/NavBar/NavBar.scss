@@ -21,7 +21,7 @@
   background-color: #232631;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   box-shadow: 0px 0px 15px black;
@@ -29,41 +29,16 @@
   z-index: 999;
 
   #{&}__menu {
-    width: 50%;
-    justify-content: right;
+    margin: 0;
+    padding: 0;
+    width: 60%;
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
   }
 
   #{&}__menu__items {
     font-size: 1.6rem;
-    padding-right: 3rem;
-  }
-
-  #{&}__icons {
-    width: 50%;
-    justify-content: left;
-    display: flex;
-    list-style-type: none;
-  }
-
-  #{&}__icons__items {
-    opacity: 80%;
-    font-weight: lighter;
-    font-size: 2rem;
-    padding-right: 1.5rem;
-    padding-top: 10px;
-  }
-  ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-
-  ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
   }
 }
 
@@ -85,56 +60,29 @@ a:hover {
 
 @media (max-width: 767px) {
   .navBar {
+    #{&}__menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+    }
     #{&}__menu__items {
-      font-size: 1.25rem;
-      padding: 3%;
-    }
-
-    #{&}__icons {
-      padding-left: 1%;
-    }
-
-    #{&}__icons__items {
-      font-size: 1.5rem;
-      padding-right: 5%;
-      padding-top: 0.3rem;
-    }
-  }
-}
-
-@media (max-width: 424px) {
-  .navBar {
-    #{&}__icons__items {
-      font-size: 1.2rem;
-      padding-right: 1%;
+      font-size: 1.4rem;
     }
   }
 }
 
 @media (max-width: 374px) {
   .navBar {
-    #{&}__menu {
-      width: 80%;
-      justify-content: center;
-      align-items: center;
-      padding-right: 11%;
-    }
     #{&}__menu__items {
       font-size: 1.2rem;
-    }
-
-    #{&}__icons {
-      width: 0%;
-      display: none;
     }
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 319px) {
   .navBar {
-    padding-right: 10%;
     #{&}__menu__items {
-      padding: 2%;
       font-size: 1rem;
     }
   }
