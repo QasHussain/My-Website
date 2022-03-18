@@ -7,11 +7,13 @@ function PlanningAndPreperation() {
     <div className="designPage">
       <div className="designContainer">
         <div className="designContainer__imgBox">
-          <img
-            src={PlanningPreperation}
-            className="designContainer__imgBox__img"
-            alt="PlanningPreperation"
-          />
+          <a href="https://i.imgur.com/QiovxA9.jpg">
+            <img
+              src={PlanningPreperation}
+              className="designContainer__imgBox__img"
+              alt="PlanningPreperation"
+            />
+          </a>
         </div>
         <div className="designContainer__textBox">
           <h2 className="designContainer__textBox__title">

@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectsPage.scss";
 import Codex from "../../assets/Codex.jpg";
 
-function ProjectsPage({ gitClick, appClick }) {
+function ProjectsPage({ gitClick, appClick, designClick }) {
   return (
     <div className="projectsPage">
       <div className="pTitleContainer">
@@ -41,9 +41,14 @@ function ProjectsPage({ gitClick, appClick }) {
             >
               LIVE APP
             </button>
-            <button className="pContentContainer__textBoxButtons__btn">
+
+            <button
+              onClick={designClick}
+              className="pContentContainer__textBoxButtons__btn"
+            >
               DESIGN PROCESS
             </button>
+
             <button
               onClick={gitClick}
               className="pContentContainer__textBoxButtons__btn"

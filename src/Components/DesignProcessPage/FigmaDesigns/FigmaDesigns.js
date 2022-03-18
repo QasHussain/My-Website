@@ -7,11 +7,13 @@ function FigmaDesigns() {
     <div className="designFigPage">
       <div className="designFigContainer">
         <div className="designFigContainer__imgBox">
-          <img
-            src={Figma}
-            className="designFigContainer__imgBox__img"
-            alt="Figma Designs"
-          />
+          <a href="https://i.imgur.com/sZqDKCC.jpg">
+            <img
+              src={Figma}
+              className="designFigContainer__imgBox__img"
+              alt="Figma Designs"
+            />
+          </a>
         </div>
         <div className="designFigContainer__textBox">
           <h2 className="designFigContainer__textBox__title">Figma Designs</h2>

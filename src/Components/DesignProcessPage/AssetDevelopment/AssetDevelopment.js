@@ -23,11 +23,13 @@ function AssetDevelopment() {
           </p>
         </div>
         <div className="designLeftContainer__imgBox">
-          <img
-            src={Asset}
-            className="designLeftContainer__imgBox__img"
-            alt="Asset Development"
-          />
+          <a href="https://i.imgur.com/ocYROzh.jpg">
+            <img
+              src={Asset}
+              className="designLeftContainer__imgBox__img"
+              alt="Asset Development"
+            />
+          </a>
         </div>
       </div>
     </div>
