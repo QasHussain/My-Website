@@ -29,9 +29,10 @@
   z-index: 999;
 
   #{&}__menu {
+    width: 50%;
+    justify-content: right;
     display: flex;
     list-style-type: none;
-    padding-right: 1rem;
   }
 
   #{&}__menu__items {
@@ -40,6 +41,8 @@
   }
 
   #{&}__icons {
+    width: 50%;
+    justify-content: left;
     display: flex;
     list-style-type: none;
   }
@@ -49,7 +52,7 @@
     font-weight: lighter;
     font-size: 2rem;
     padding-right: 1.5rem;
-    padding-top: 0.6rem;
+    padding-top: 10px;
   }
   ::before {
     margin: 0;
@@ -82,32 +85,18 @@ a:hover {
 
 @media (max-width: 767px) {
   .navBar {
-    justify-content: space-evenly;
-    align-items: center;
-
-    #{&}__menu {
-      padding-right: 0rem;
-    }
-
     #{&}__menu__items {
-      position: relative;
-      right: 10%;
       font-size: 1.25rem;
       padding: 3%;
     }
 
     #{&}__icons {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      list-style-type: none;
-      padding-left: 0;
-      margin-left: -7%;
+      padding-left: 1%;
     }
 
     #{&}__icons__items {
-      font-size: 1.2rem;
-      padding-right: 15%;
+      font-size: 1.5rem;
+      padding-right: 5%;
       padding-top: 0.3rem;
     }
   }
@@ -115,61 +104,38 @@ a:hover {
 
 @media (max-width: 424px) {
   .navBar {
-    #{&}__menu__items {
-      position: relative;
-      right: 14%;
-      font-size: 1.1rem;
-      padding: 3%;
-      margin-left: 0;
-    }
-
-    #{&}__icons {
-      margin-left: -5%;
-    }
-
     #{&}__icons__items {
       font-size: 1.2rem;
-      padding-right: 15%;
-      padding-top: 0.2rem;
+      padding-right: 1%;
     }
   }
 }
 
 @media (max-width: 374px) {
   .navBar {
+    #{&}__menu {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      padding-right: 11%;
+    }
     #{&}__menu__items {
-      position: relative;
-      right: 8%;
-      font-size: 1rem;
-      padding: 4%;
-      margin-left: -4%;
+      font-size: 1.2rem;
     }
 
     #{&}__icons {
-      margin-left: -4.5%;
-    }
-
-    #{&}__icons__items {
-      font-size: 1.1rem;
-      padding-right: 8%;
-      padding-top: 0.3rem;
-      margin-left: 8%;
+      width: 0%;
+      display: none;
     }
   }
 }
 
-@media (max-width: 315px) {
+@media (max-width: 280px) {
   .navBar {
+    padding-right: 10%;
     #{&}__menu__items {
-      position: relative;
-      right: 19%;
+      padding: 2%;
       font-size: 1rem;
-      padding: 5%;
-      margin-left: -4%;
-    }
-
-    #{&}__icons {
-      display: none;
     }
   }
 }
