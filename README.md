@@ -4,13 +4,13 @@
 
 ## Description
 
-My online portfolio website. I built this website to display to act as my online CV when applying for fton end development jobs. This project was degined in Figma and built in react using javascript, node.js and sass. I set out to make a website that was sleek, lightweight, and stylish that would also be fully responsive and compatible on for all devices.
+My online portfolio website. I built this website to act as my online CV when applying for front end development jobs. This project was degined in Figma and built in react using javascript, node.js and sass. I set out to make a website that was sleek, lightweight, and stylish as wekk as fully responsive and compatible on for all devices.
 
 ## Planning and Preperation
 
-As with my previous prject, the planning and preparation for this website involved a lot of design work in Figama. I search the internet for websites that I liked to draw inspiration from before I went into Figma and started designing my website. I knew I wanted it to a single page application that was clear and intuitive.
+As with my previous project, the planning and preparation for this website involved a lot of design work in Figama. I searched the internet for websites that I liked to draw inspiration from before I went into Figma and started designing my project. I knew I wanted a single page application that was clear and intuitive.
 
-Using Figma I designed the landing page, main content and a separate 'development process' page for my portfolio project that would highlight all the steps I took when building my Final Fnatasy Codex application:
+Using Figma I designed the landing page, main content and a separate 'development process' page for my portfolio project that would highlight all the steps I took when building my Final Fantasy Codex application:
 
 **Figma Landing Page Design:**
 
