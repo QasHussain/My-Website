@@ -281,7 +281,7 @@ a:hover {
   }
   .logos {
     #{&}__icons {
-      width: 60%;
+      width: 50%;
       justify-content: space-between;
     }
 
@@ -328,7 +328,7 @@ a:hover {
 @media (max-width: 424px) {
   .logos {
     #{&}__icons {
-      width: 80%;
+      width: 50%;
       justify-content: space-between;
     }
 
