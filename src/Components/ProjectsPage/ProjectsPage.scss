@@ -85,7 +85,7 @@
 
   #{&}__btn {
     display: block;
-    width: 85%;
+    width: 100%;
     margin-bottom: 1rem;
     color: #ff9c9c;
     font-weight: light;
@@ -166,9 +166,9 @@ a {
     flex-direction: row;
 
     #{&}__btn {
-      width: 30%;
+      width: 100%;
       border: solid 3.5px #ff9c9c;
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
   }
 }
@@ -205,7 +205,7 @@ a {
 
   .pContentContainer__textBoxButtons {
     #{&}__btn {
-      width: 30%;
+      width: 100%;
       border: solid 3.5px #ff9c9c;
       font-size: 0.9rem;
       padding: 0.3rem;
@@ -260,24 +260,41 @@ a {
   }
 
   .pContentContainer__textBoxButtons {
-    width: 85%;
+    width: 80%;
     #{&}__btn {
-      width: 30%;
-      border: solid 2px #ff9c9c;
-      font-size: 0.9rem;
-      padding: 0.2rem;
+      width: 100%;
+
+      font-size: 1rem;
+      padding: 0.3rem;
     }
   }
 }
 
-@media (max-width: 319px) {
+@media (max-width: 424px) {
   .pContentContainer__textBoxButtons {
-    width: 100%;
+    width: 90%;
     #{&}__btn {
-      width: 40%;
-      border: solid 2px #ff9c9c;
-      font-size: 0.9rem;
-      padding: 0.2rem;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .pContentContainer__textBoxButtons {
+    width: 90%;
+    #{&}__btn {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .pContentContainer__textBoxButtons {
+    width: 95%;
+    #{&}__btn {
+      width: 100%;
+      font-size: 0.7rem;
     }
   }
 }

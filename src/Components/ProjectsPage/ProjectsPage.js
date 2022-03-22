@@ -24,7 +24,7 @@ function ProjectsPage() {
           </h2>
           <p className="pContentContainer__textBox__txt">
             An online, interactive encyclopedia of every Final Fantasy character
-            from entry 6-15 learning their backstory, age, first appearence and
+            from entry 6-15 learning their backstory, age, first appearance and
             much more. The user can also use the search feature to browse for
             specific characters by name.
           </p>
