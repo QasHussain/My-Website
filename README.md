@@ -44,9 +44,9 @@ With all the design work completed, I began the build. Given the single page, re
 
 ## Technologies Used:
 
-*React
-*Javascript
-*Figma
-*Css
-*Node.js
-*Scss
+* React
+* Javascript
+* Figma
+* Css
+* Node.js
+* Scss
