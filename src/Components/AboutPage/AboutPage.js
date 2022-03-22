@@ -5,10 +5,6 @@ import profilePic from "../../assets/ProfilePic.jpg";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 function AboutPage() {
-  const gitClick = () => {
-    window.open("https://github.com/QasHussain");
-  };
-
   const linkedinClick = () => {
     window.open("https://www.linkedin.com/in/qasim-hussain-353088108/");
   };
@@ -31,13 +27,25 @@ function AboutPage() {
           <div className="logos">
             <ul className="logos__icons">
               <li className="logos__iconsItems">
-                <span onClick={gitClick} className="icons">
-                  <AiFillGithub />
+                <span>
+                  <a
+                    className="icons"
+                    href="https://github.com/QasHussain"
+                    target="_blank"
+                  >
+                    <AiFillGithub />
+                  </a>
                 </span>
               </li>
               <li className="logos__iconsItems">
-                <span onClick={linkedinClick} className="icons">
-                  <AiFillLinkedin />
+                <span>
+                  <a
+                    className="icons"
+                    href="https://www.linkedin.com/in/qasim-hussain-353088108/"
+                    target="_blank"
+                  >
+                    <AiFillLinkedin />
+                  </a>
                 </span>
               </li>
               <li className="logos__iconsItems">
@@ -64,7 +72,7 @@ function AboutPage() {
           <div className="contentContainerSkills__grid">
             {logoArray.map((logo) => (
               <div className="border">
-                <img className="img" src={logo.image} />
+                <img className="img" alt="logoImage" src={logo.image} />
                 <p className="txt">{logo.name.toLocaleUpperCase()}</p>
               </div>
             ))}

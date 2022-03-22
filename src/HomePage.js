@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import "./App.scss";
-import AboutPage from "./Components/AboutPage/AboutPage";
-import Background from "./Components/Background/Background";
-import ContactPage from "./Components/ContactPage/ContactPage";
+import AboutPage from "./components/AboutPage/AboutPage";
+import Background from "./components/Background/Background";
+import ContactPage from "./components/ContactPage/ContactPage";
 
-import Footer from "./Components/Footer/Footer";
-import LandingPage from "./Components/LandingPage/LandingPage";
-import NavBar from "./Components/NavBar/NavBar";
-import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
+import Footer from "./components/Footer/Footer";
+import LandingPage from "./components/LandingPage/LandingPage";
+import NavBar from "./components/NavBar/NavBar";
+import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 
 function Home() {
   const scrollHomeRef = useRef();
@@ -28,16 +28,6 @@ function Home() {
     scrollToContact.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleAppClick = () => {
-    window.open("https://final-fantasy-codex-v2.web.app/");
-  };
-  const handleGitClick = () => {
-    window.open("https://github.com/QasHussain/Final-Fantasy-Codex-V2");
-  };
-  const handleDesignClick = () => {
-    window.open("https://qasimh-dev.com/designProcess");
-  };
-
   return (
     <Background>
       <NavBar
@@ -53,11 +43,7 @@ function Home() {
         <AboutPage />
       </div>
       <div ref={scrollToProjects}>
-        <ProjectsPage
-          appClick={handleAppClick}
-          gitClick={handleGitClick}
-          designClick={handleDesignClick}
-        />
+        <ProjectsPage />
       </div>
 
       <div ref={scrollToContact}>

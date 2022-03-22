@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectsPage.scss";
 import Codex from "../../assets/Codex.jpg";
 
-function ProjectsPage({ gitClick, appClick, designClick }) {
+function ProjectsPage() {
   return (
     <div className="projectsPage">
       <div className="pTitleContainer">
@@ -35,26 +35,24 @@ function ProjectsPage({ gitClick, appClick, designClick }) {
             devices.
           </p>
           <div className="pContentContainer__textBoxButtons">
-            <button
-              onClick={appClick}
-              className="pContentContainer__textBoxButtons__btn"
+            <a href="https://final-fantasy-codex-v2.web.app/" target="_blank">
+              <button className="pContentContainer__textBoxButtons__btn">
+                LIVE APP
+              </button>
+            </a>
+            <a href="https://qasimh-dev.com/designprocess" target="_blank">
+              <button className="pContentContainer__textBoxButtons__btn">
+                DESIGN PROCESS
+              </button>
+            </a>
+            <a
+              href="https://github.com/QasHussain/Final-Fantasy-Codex-V2"
+              target="_blank"
             >
-              LIVE APP
-            </button>
-
-            <button
-              onClick={designClick}
-              className="pContentContainer__textBoxButtons__btn"
-            >
-              DESIGN PROCESS
-            </button>
-
-            <button
-              onClick={gitClick}
-              className="pContentContainer__textBoxButtons__btn"
-            >
-              GITHUB
-            </button>
+              <button className="pContentContainer__textBoxButtons__btn">
+                GITHUB
+              </button>
+            </a>
           </div>
         </div>
       </div>

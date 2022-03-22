@@ -4,10 +4,9 @@ import PlanningAndPreperation from "./PlanningAndPreperation/PlanningAndPreperat
 import FigmaDesigns from "./FigmaDesigns/FigmaDesigns";
 import "./DesignProcessPage.scss";
 import Background from "../Background/Background";
-import { TiArrowBackOutline } from "react-icons/ti";
 import DesignFooter from "./DesignProcessPageFooter/DesignFooter";
 
-function DesignProcessPage({ appClick, gitClick, figmaClick }) {
+function DesignProcessPage() {
   return (
     <div>
       <Background>
@@ -46,15 +45,21 @@ function DesignProcessPage({ appClick, gitClick, figmaClick }) {
           </p>
         </div>
         <div className="buttonContainer">
-          <button onClick={figmaClick} className="buttonContainer__btn">
-            FIGMA PROJECT
-          </button>
-          <button onClick={appClick} className="buttonContainer__btn">
-            LIVE APPLICATION
-          </button>
-          <button onClick={gitClick} className="buttonContainer__btn">
-            PROJECT GITHUB
-          </button>
+          <a
+            href="https://www.figma.com/file/3u5Jpg08VsMb72I1Fj2abD/Final-Fantasy-Codex-Mock-Design2?node-id=0%3A1"
+            target="_blank"
+          >
+            <button className="buttonContainer__btn">FIGMA PROJECT</button>
+          </a>
+          <a href="https://final-fantasy-codex-v2.web.app/" target="_blank">
+            <button className="buttonContainer__btn">LIVE APPLICATION</button>
+          </a>
+          <a
+            href="https://github.com/QasHussain/Final-Fantasy-Codex-V2"
+            target="_blank"
+          >
+            <button className="buttonContainer__btn">PROJECT GITHUB</button>
+          </a>
         </div>
         <DesignFooter />
       </Background>
