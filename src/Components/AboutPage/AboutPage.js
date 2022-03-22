@@ -5,6 +5,14 @@ import profilePic from "../../assets/ProfilePic.jpg";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 function AboutPage() {
+  const gitClick = () => {
+    window.open("https://github.com/QasHussain");
+  };
+
+  const linkedinClick = () => {
+    window.open("https://www.linkedin.com/in/qasim-hussain-353088108/");
+  };
+
   return (
     <div className="aboutPage">
       <div className="titleContainer">
@@ -23,20 +31,13 @@ function AboutPage() {
           <div className="logos">
             <ul className="logos__icons">
               <li className="logos__iconsItems">
-                <span>
-                  <a className="icons" href="https://github.com/QasHussain">
-                    <AiFillGithub />
-                  </a>
+                <span onClick={gitClick} className="icons">
+                  <AiFillGithub />
                 </span>
               </li>
               <li className="logos__iconsItems">
-                <span>
-                  <a
-                    className="icons"
-                    href="https://www.linkedin.com/in/qasim-hussain-353088108/"
-                  >
-                    <AiFillLinkedin />
-                  </a>
+                <span onClick={linkedinClick} className="icons">
+                  <AiFillLinkedin />
                 </span>
               </li>
               <li className="logos__iconsItems">
